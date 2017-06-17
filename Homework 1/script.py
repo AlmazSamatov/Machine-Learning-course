@@ -2,7 +2,7 @@ import pandas
 from collections import Counter
 
 # calculating the number of males and females
-data = pandas.read_csv('titanic.csv', index_col='PassengerId')
+data = pandas.read_csv('Data/titanic.csv', index_col='PassengerId')
 print(str(data.get('Sex').value_counts()['male']) + ' ' + str(data.get('Sex').value_counts()['female']))
 
 # calculating percentage of survived people at Titanic
